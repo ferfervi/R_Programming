@@ -82,7 +82,7 @@ What is the value of "y" after evaluating this expression?
 
 Consider the following R function
 > h <- function(x, y = NULL, d = 3L) {
-        z <- cbind(x, d)
+>        z <- cbind(x, d)
         if(!is.null(y))
                 z <- z + y
         else
