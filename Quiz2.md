@@ -139,7 +139,8 @@ How are free variables in R functions resolved?
 3. The values of free variables are searched for in the working directory			
 4. The values of free variables are searched for in the environment in which the function was called			
 ```
--	
+-
+	
 ### Question 9
 
 What is one of the consequences of the scoping rules used in R?
