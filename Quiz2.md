@@ -33,7 +33,7 @@ Why?
 4. The expression uses curly braces.			
 ```
 -
-###Question 3
+### Question 3
 
 Consider the following function
 > f <- function(x) {
@@ -54,9 +54,9 @@ What value is returned?
 2. 10	Correct	1.00	
 3. 16			
 4. 4			
-
+```
 -
-###Question 4
+### Question 4
 
 Consider the following expression:
 > x <- 5
