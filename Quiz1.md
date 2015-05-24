@@ -294,11 +294,12 @@ In the dataset provided for this Quiz, what are the column names of the dataset?
 -
 ### Question 12
 Extract the first 2 rows of the data frame and print them to the console. What does the output look like?
+```
 > myfile[c(1:2),]
   Ozone Solar.R Wind Temp Month Day
 1    41     190  7.4   67     5   1
 2    36     118  8.0   72     5   2
-
+```
 ```
 1.  Ozone Solar.R Wind Temp Month Day
 1    41     190  7.4   67     5   1
@@ -322,6 +323,7 @@ Correct	1.00	You can extract the first two rows using the [ operator and an inte
 -
 ### Question 13
 How many observations (i.e. rows) are in this data frame?
+```
 > dim(myfile)
 [1] 153   6
 
@@ -329,6 +331,7 @@ How many observations (i.e. rows) are in this data frame?
 [1] 153
 > ncol(myfile)
 [1] 6
+```
 ```
 1. 153	Correct	1.00	You can use the `nrow()' function to compute the number of rows in a data frame.
 2. 160	
@@ -378,8 +381,10 @@ Correct	1.00	The `tail()' function is an easy way to extract the last few elemen
 -
 ### Question 15
 What is the value of Ozone in the 47th row?
+```
 > myfile[47,"Ozone"]
 [1] 21
+```
 ```
 1. 34	
 2. 21	Correct	1.00	The single bracket [ operator can be used to extract individual rows of a data frame.
@@ -424,11 +429,12 @@ The "is.na" function can be used to test for missing values.
 ```
 ### Question 17
 What is the mean of the Ozone column in this dataset? Exclude missing values (coded as NA) from this calculation.
-
+```
 > mean(myfile[,"Ozone"], na.rm=TRUE)
 [1] 42.12931
 Your Answer		Score	Explanation
 
+```
 ```
 1. 18.0	
 2. 31.5	
@@ -461,6 +467,7 @@ Extract the subset of rows of the data frame where Ozone values are above 31 and
 > mean(R[,"Solar.R"])
 [1] 212.8
 ```
+```
 1. 205.0	
 2. 212.8	Correct	1.00	
 3. 185.9	
@@ -473,7 +480,7 @@ You need to construct a logical vector in R to match the question's requirements
 -
 ### Question 19
 What is the mean of "Temp" when "Month" is equal to 6?
-
+```
 > T= subset(myfile,myfile[,"Month"] ==6)
 > T
    Ozone Solar.R Wind Temp Month Day
@@ -509,6 +516,7 @@ What is the mean of "Temp" when "Month" is equal to 6?
 61    NA     138  8.0   83     6  30
 > mean(T[,"Temp"])
 [1] 79.1
+```
 ```
 1. 90.2	
 2. 75.3	
@@ -561,8 +569,9 @@ What was the maximum ozone value in the month of May (i.e. Month = 5)?
 2. 97	
 3. 100	
 4. 115	Correct	1.00
----
 ```
+-
+-
 > getwd()
 [1] "/Users/Fer"
 > myfunction()
