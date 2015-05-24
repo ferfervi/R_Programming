@@ -1,31 +1,23 @@
+# QUIZ 1
+
+```
 http://www.statmethods.net/input/missingdata.html
 http://swirlstats.com/
+```
 
+### Question 1
 
-Question 1
-
-R was developed by statisticians working at
-Your Answer
-Score	Explanation
-Insightful	
-
-
-
-Johns Hopkins University	
-
-
-
-Microsoft	
-
-
+```
+R was developed by statisticians working at:
 
 The University of Auckland	Correct	1.00	The R language was developed by Ross Ihaka and Robert Gentleman who were statisticians at the University of Auckland in New Zealand.
 Total	
 
 1.00 / 1.00	
+```
 
-
-Question 2
+### Question 2
+```
 The definition of free software consists of four freedoms (freedoms 0 through 3). Which of the following is NOT one of the freedoms that are part of the definition?
 Your Answer		Score	Explanation
 The freedom to run the program, for any purpose.	
@@ -42,9 +34,10 @@ The freedom to sell the software for any price.	Correct	1.00	This is not part of
 Total 
 
 1.00 / 1.00	
+```
 
-
-Question 3
+### Question 3
+```
 In R the following are all atomic data types EXCEPT
 Your Answer		Score	Explanation
 integer	
@@ -62,11 +55,12 @@ array	Correct	1.00	'array' is not an atomic data type in R.
 Total	
 
 1.00 / 1.00	
+```
 
 
 
-
-Question 4
+### Question 4
+```
 If I execute the expression x <- 4L in R, what is the class of the object `x' as determined by the `class()' function?
 Your Answer		Score	Explanation
 integer	Correct	1.00	The 'L' suffix creates an integer vector as opposed to a numeric vector.
@@ -85,9 +79,10 @@ matrix
 Total	
 
 1.00 / 1.00	
+```
 
-
-Question 5
+### Question 5
+```
 What is the class of the object defined by the expression x <- c(4, "a", TRUE)?
 Your Answer		Score	Explanation
 logical	
@@ -109,8 +104,10 @@ Total
 Question Explanation
 
 R does automatic coercion of vectors so that all elements of the vector are the same data class.
-Question 6
+```
 
+### Question 6
+```
 If I have two vectors x <- c(1,3, 5) and y <- c(3, 2, 10), what is produced by the expression cbind(x, y)?
 Your Answer		Score	Explanation
 a 3 by 3 matrix	
@@ -129,8 +126,10 @@ Total
 
 1.00 / 1.00	
 
-Question 7
+```
 
+### Question 7
+```
 A key property of vectors in R is that
 Your Answer		Score	Explanation
 elements of a vector can only be character or numeric	
@@ -150,9 +149,10 @@ elements of a vector all must be of the same class	Correct	1.00
 Total	
 
 1.00 / 1.00	
+```
 
-Question 8
-
+### Question 8
+```
 Suppose I have a list defined as x <- list(2, "a", "b", TRUE). What does x[[1]] give me?
 Your Answer		Score	Explanation
 a numeric vector containing the element 2.	Correct	1.00	
@@ -172,9 +172,10 @@ a character vector containing the element "2".
 Total	
 
 1.00 / 1.00	
+```
 
-Question 9
-
+### Question 9
+```
 Suppose I have a vector x <- 1:4 and y <- 2:3. What is produced by the expression x + y?
 Your Answer		Score	Explanation
 a warning	
@@ -194,9 +195,10 @@ an integer vector with the values 3, 5, 3, 4.
 Total	
 
 1.00 / 1.00	
+```
 
-Question 10
-
+### Question 10
+```
 Suppose I have a vector x <- c(3, 5, 1, 10, 12, 6) and I want to set all elements of this vector that are less than 6 to be equal to zero. What R code achieves this?
 Your Answer		Score	Explanation
 x[x < 6] <- 0	Correct	1.00	You can create a logical vector with the expression x < 6 and then use the [ operator to subset the original vector x.
@@ -214,9 +216,11 @@ x[x != 6] <- 0
 Total	
 
 1.00 / 1.00	
+```
 
-Question 11
+### Question 11
 
+```
 In the dataset provided for this Quiz, what are the column names of the dataset?
 > dir()
 [1] "functions.R"  "hw1_data.csv" "Untitled.R"  
@@ -400,11 +404,12 @@ Total
 
 solution:
 
+```
 
 
+### Question 12
 
-Question 12
-
+```
 Extract the first 2 rows of the data frame and print them to the console. What does the output look like?
 
 > myfile[c(1:2),]
@@ -445,9 +450,10 @@ Correct	1.00	You can extract the first two rows using the [ operator and an inte
 Total	
 
 1.00 / 1.00	
+```
 
-Question 13
-
+### Question 13
+```
 How many observations (i.e. rows) are in this data frame?
 > dim(myfile)
 [1] 153   6
@@ -474,8 +480,10 @@ Total
 
 1.00 / 1.00	
 
-Question 14
+```
 
+### Question 14
+```
 Extract the last 2 rows of the data frame and print them to the console. What does the output look like?
 > myfile[c((nrow(myfile)-1):nrow(myfile)),]
     Ozone Solar.R Wind Temp Month Day
@@ -525,9 +533,11 @@ Correct	1.00	The `tail()' function is an easy way to extract the last few elemen
 Total	
 
 1.00 / 1.00	
+```
 
-Question 15
+### Question 15
 
+```
 What is the value of Ozone in the 47th row?
 > myfile[47,"Ozone"]
 [1] 21
@@ -549,8 +559,10 @@ Total
 
 1.00 / 1.00	
 
-Question 16
+```
+### Question 16
 
+```
 How many missing values are in the Ozone column of this data frame?
 
 > missing=is.na(myfile[,"Ozone"])
@@ -596,8 +608,10 @@ Total
 Question Explanation
 
 The `is.na' function can be used to test for missing values.
-Question 17
 
+```
+### Question 17
+```
 What is the mean of the Ozone column in this dataset? Exclude missing values (coded as NA) from this calculation.
 
 > mean(myfile[,"Ozone"], na.rm=TRUE)
@@ -624,8 +638,9 @@ Total
 Question Explanation
 
 The `mean' function can be used to calculate the mean.
-Question 18
-
+```
+### Question 18
+```
 Extract the subset of rows of the data frame where Ozone values are above 31 and Temp values are above 90. What is the mean of Solar.R in this subset?
 
 > R= subset(myfile,myfile[,"Ozone"] >31 & myfile[,"Temp"] >90)
@@ -666,7 +681,10 @@ Total
 Question Explanation
 
 You need to construct a logical vector in R to match the question's requirements. Then use that logical vector to subset the data frame.
-Question 19
+```
+
+### Question 19
+```
 
 What is the mean of "Temp" when "Month" is equal to 6?
 
@@ -723,9 +741,10 @@ Your Answer		Score	Explanation
 Total	
 
 1.00 / 1.00	
+```
 
-
-Question 20
+### Question 20
+```
 What was the maximum ozone value in the month of May (i.e. Month = 5)?
 
 > max(subset(myfile[["Ozone"]],myfile[,"Month"] == 5), na.rm=TRUE)
@@ -987,4 +1006,4 @@ Error: could not find function "myfunction"
 152    18     131  8.0   76     9  29
 153    20     223 11.5   68     9  30
 > myfile=read.csv("hw1_data.csv")
-
+```
