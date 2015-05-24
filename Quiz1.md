@@ -6,27 +6,18 @@ http://swirlstats.com/
 ```
 -
 ### Question 1
-
 R was developed by statisticians working at:
 ```
-
 The University of Auckland	Correct	1.00	The R language was developed by Ross Ihaka and Robert Gentleman who were statisticians at the University of Auckland in New Zealand.
-Total	
 
-1.00 / 1.00	
 ```
 -
 ### Question 2
-
 The definition of free software consists of four freedoms (freedoms 0 through 3). Which of the following is NOT one of the freedoms that are part of the definition?
 ```
-
 1. The freedom to run the program, for any purpose.	
-
 2. The freedom to improve the program, and release your improvements to the public, so that the whole community benefits.	
-
 3. The freedom to redistribute copies so you can help your neighbor.
-
 4. The freedom to sell the software for any price.	Correct	1.00	This is not part of the free software definition. The free software definition does not mention anything about selling software (although it does not disallow it).
 
 ```
@@ -35,13 +26,9 @@ The definition of free software consists of four freedoms (freedoms 0 through 3)
 In R the following are all atomic data types EXCEPT
 ```
 1. integer	
-
 2. logical	
-
 3. numeric	
-
 4. array	Correct	1.00	'array' is not an atomic data type in R.
-
 ```
 -
 ### Question 4
@@ -326,7 +313,6 @@ How many observations (i.e. rows) are in this data frame?
 ```
 > dim(myfile)
 [1] 153   6
-
 > nrow(myfile)
 [1] 153
 > ncol(myfile)
@@ -337,7 +323,6 @@ How many observations (i.e. rows) are in this data frame?
 2. 160	
 3. 129	
 4. 45	
-
 ```
 ### Question 14
 Extract the last 2 rows of the data frame and print them to the console. What does the output look like?
@@ -421,11 +406,8 @@ How many missing values are in the Ozone column of this data frame?
 3. 43	
 4. 37	Correct	1.00	
 
-
 Question Explanation
-
 The "is.na" function can be used to test for missing values.
-
 ```
 ### Question 17
 What is the mean of the Ozone column in this dataset? Exclude missing values (coded as NA) from this calculation.
@@ -474,7 +456,6 @@ Extract the subset of rows of the data frame where Ozone values are above 31 and
 4. 334.0	
 
 Question Explanation
-
 You need to construct a logical vector in R to match the question's requirements. Then use that logical vector to subset the data frame.
 ```
 -
