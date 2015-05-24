@@ -66,12 +66,13 @@ y <- if(x < 3) {
         10
 }
 
-What is the value of 'y' after evaluating this expression?
+What is the value of "y" after evaluating this expression?
 ```
 1. 3			
 2. NA			
 3. 5			
 4. 10	Correct	1.00	
+
 ```
 -	
 ### Question 5
