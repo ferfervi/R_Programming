@@ -1,223 +1,116 @@
+# QUIZ 1
+
+```
 http://www.statmethods.net/input/missingdata.html
 http://swirlstats.com/
-
-
-Question 1
-
-R was developed by statisticians working at
-Your Answer
-Score	Explanation
-Insightful	
-
-
-
-Johns Hopkins University	
-
-
-
-Microsoft	
-
-
-
+```
+-
+### Question 1
+R was developed by statisticians working at:
+```
 The University of Auckland	Correct	1.00	The R language was developed by Ross Ihaka and Robert Gentleman who were statisticians at the University of Auckland in New Zealand.
-Total	
 
-1.00 / 1.00	
-
-
-Question 2
+```
+-
+### Question 2
 The definition of free software consists of four freedoms (freedoms 0 through 3). Which of the following is NOT one of the freedoms that are part of the definition?
-Your Answer		Score	Explanation
-The freedom to run the program, for any purpose.	
+```
+1. The freedom to run the program, for any purpose.	
+2. The freedom to improve the program, and release your improvements to the public, so that the whole community benefits.	
+3. The freedom to redistribute copies so you can help your neighbor.
+4. The freedom to sell the software for any price.	Correct	1.00	This is not part of the free software definition. The free software definition does not mention anything about selling software (although it does not disallow it).
 
-
-The freedom to improve the program, and release your improvements to the public, so that the whole community benefits.	
-
-
-The freedom to redistribute copies so you can help your neighbor.
-
-
-
-The freedom to sell the software for any price.	Correct	1.00	This is not part of the free software definition. The free software definition does not mention anything about selling software (although it does not disallow it).
-Total 
-
-1.00 / 1.00	
-
-
-Question 3
+```
+-
+### Question 3
 In R the following are all atomic data types EXCEPT
-Your Answer		Score	Explanation
-integer	
+```
+1. integer	
+2. logical	
+3. numeric	
+4. array	Correct	1.00	"array" is not an atomic data type in R.
+```
+-
+### Question 4
+If I execute the expression x <- 4L in R, what is the class of the object x as determined by the class() function?
+```
+1. integer	Correct	1.00	The L suffix creates an integer vector as opposed to a numeric vector.
+2. numeric	
+3. character	
+4. matrix	
+```
+- 
 
-
-logical	
-
-
-
-numeric	
-
-
-
-array	Correct	1.00	'array' is not an atomic data type in R.
-Total	
-
-1.00 / 1.00	
-
-
-
-
-Question 4
-If I execute the expression x <- 4L in R, what is the class of the object `x' as determined by the `class()' function?
-Your Answer		Score	Explanation
-integer	Correct	1.00	The 'L' suffix creates an integer vector as opposed to a numeric vector.
-numeric	
-
-
-
-character	
-
-
-
-matrix	
-
-
-
-Total	
-
-1.00 / 1.00	
-
-
-Question 5
-What is the class of the object defined by the expression x <- c(4, "a", TRUE)?
-Your Answer		Score	Explanation
-logical	
-
-
-
-character	Correct	1.00	The character class is the "lowest common denominator" here and so all elements will be coerced into that class.
-numeric	
-
-
-
-integer	
-
-
-Total	
-
-1.00 / 1.00	
+### Question 5
+What is the class of the object defined by the expression x <- c(4, 'a', TRUE)?
+```
+1. logical	
+2. character	Correct	1.00	The character class is the lowest common denominator here and so all elements will be coerced into that class.
+3. numeric	
+4. integer	
 
 Question Explanation
-
 R does automatic coercion of vectors so that all elements of the vector are the same data class.
-Question 6
+```
+-
 
+### Question 6
 If I have two vectors x <- c(1,3, 5) and y <- c(3, 2, 10), what is produced by the expression cbind(x, y)?
-Your Answer		Score	Explanation
-a 3 by 3 matrix	
-
-
-a vector of length 2	
-
-
-
-a 3 by 2 numeric matrix	Correct	1.00	The 'cbind' function treats vectors as if they were columns of a matrix. It then takes those vectors and binds them together column-wise to create a matrix.
-a vector of length 3	
-
-
-
-Total	
-
-1.00 / 1.00	
-
-Question 7
-
+```
+1. a 3 by 3 matrix	
+2. a vector of length 2	
+3. a 3 by 2 numeric matrix	Correct	1.00	The 'cbind' function treats vectors as if they were columns of a matrix. It then takes those vectors and binds them together column-wise to create a matrix.
+4. a vector of length 3	
+```
+-
+### Question 7
 A key property of vectors in R is that
-Your Answer		Score	Explanation
-elements of a vector can only be character or numeric	
+```
+1.elements of a vector can only be character or numeric	
 
+2.elements of a vector can be of different classes	
 
+3.a vector cannot have have attributes like dimensions	
 
-elements of a vector can be of different classes	
+4.elements of a vector all must be of the same class	Correct	1.00	
 
-
-
-a vector cannot have have attributes like dimensions	
-
-
-
-elements of a vector all must be of the same class	Correct	1.00	
-
-Total	
-
-1.00 / 1.00	
-
-Question 8
-
+```
+-
+### Question 8
 Suppose I have a list defined as x <- list(2, "a", "b", TRUE). What does x[[1]] give me?
-Your Answer		Score	Explanation
-a numeric vector containing the element 2.	Correct	1.00	
+```
+1. a numeric vector containing the element 2.	Correct	1.00	
 
-a list containing a numeric vector of length 1.
+2. a list containing a numeric vector of length 1.
 
+3. a list containing the number 2.	
 
+4. a character vector containing the element "2".	
 
-a list containing the number 2.	
-
-
-
-a character vector containing the element "2".	
-
-
-
-Total	
-
-1.00 / 1.00	
-
-Question 9
-
+```
+-
+### Question 9
 Suppose I have a vector x <- 1:4 and y <- 2:3. What is produced by the expression x + y?
-Your Answer		Score	Explanation
-a warning	
-
-
-
-an integer vector with the values 3, 5, 5, 7.	Correct	1.00	
-
-a numeric vector with the values 3, 5, 3, 4. 
-
-
-
-an integer vector with the values 3, 5, 3, 4.	
-
-
-
-Total	
-
-1.00 / 1.00	
-
-Question 10
-
+```
+1. a warning	
+2. an integer vector with the values 3, 5, 5, 7.	Correct	1.00	
+3. a numeric vector with the values 3, 5, 3, 4. 
+4. an integer vector with the values 3, 5, 3, 4.	
+```
+-
+### Question 10
 Suppose I have a vector x <- c(3, 5, 1, 10, 12, 6) and I want to set all elements of this vector that are less than 6 to be equal to zero. What R code achieves this?
-Your Answer		Score	Explanation
-x[x < 6] <- 0	Correct	1.00	You can create a logical vector with the expression x < 6 and then use the [ operator to subset the original vector x.
-x[x > 6] <- 0	
+```
+1. x[x < 6] <- 0	Correct	1.00	You can create a logical vector with the expression x < 6 and then use the [ operator to subset the original vector x.
+2. x[x > 6] <- 0	
+3. x[x == 6] <- 0	
+4. x[x != 6] <- 0	
 
-
-x[x == 6] <- 0	
-
-
-
-x[x != 6] <- 0	
-
-
-
-Total	
-
-1.00 / 1.00	
-
-Question 11
-
+```
+-
+### Question 11
 In the dataset provided for this Quiz, what are the column names of the dataset?
+```
 > dir()
 [1] "functions.R"  "hw1_data.csv" "Untitled.R"  
 > read.csv("hw1_data.csv")
@@ -378,105 +271,64 @@ In the dataset provided for this Quiz, what are the column names of the dataset?
 > myfile=read.csv("hw1_data.csv")
 -------------------------------------------------
 > colnames(myfile)
-[1] "Ozone"   "Solar.R" "Wind"    "Temp"    "Month"   "Day"   
-Your Answer		Score	Explanation
-Ozone, Solar.R, Wind	
-
-
-
-Ozone, Solar.R, Wind, Temp, Month, Day	Correct	1.00	You can get the column names of a data frame with the `names()' function.
-1, 2, 3, 4, 5, 6	
-
-
-
-Month, Day, Temp, Wind	
-
-
-
-Total	
-
-1.00 / 1.00	
-
-
-solution:
-
-
-
-
-Question 12
-
+[1] "Ozone"   "Solar.R" "Wind"    "Temp"    "Month"   "Day"
+   
+```
+```
+1. Ozone, Solar.R, Wind	
+2. Ozone, Solar.R, Wind, Temp, Month, Day	Correct	1.00	You can get the column names of a data frame with the `names()' function.
+3. 1, 2, 3, 4, 5, 6	
+4. Month, Day, Temp, Wind	
+```
+-
+### Question 12
 Extract the first 2 rows of the data frame and print them to the console. What does the output look like?
-
+```
 > myfile[c(1:2),]
   Ozone Solar.R Wind Temp Month Day
 1    41     190  7.4   67     5   1
 2    36     118  8.0   72     5   2
-Your Answer		Score	Explanation
-
-  Ozone Solar.R Wind Temp Month Day
+```
+```
+1.  Ozone Solar.R Wind Temp Month Day
 1    41     190  7.4   67     5   1
 2    36     118  8.0   72     5   2
 
 Correct	1.00	You can extract the first two rows using the [ operator and an integer sequence to index the rows.
 
-  Ozone Solar.R Wind Temp Month Day
+2.  Ozone Solar.R Wind Temp Month Day
 1    18     224 13.8   67     9  17
 2    NA     258  9.7   81     7  22
 
-
-
-
-
-  Ozone Solar.R Wind Temp Month Day
+3.  Ozone Solar.R Wind Temp Month Day
 1     9      24 10.9   71     9  14
 2    18     131  8.0   76     9  29
 
-
-
-
-
-  Ozone Solar.R Wind Temp Month Day
+4.  Ozone Solar.R Wind Temp Month Day
 1     7      NA  6.9   74     5  11
 2    35     274 10.3   82     7  17
 
-
-
-
-Total	
-
-1.00 / 1.00	
-
-Question 13
-
+```
+-
+### Question 13
 How many observations (i.e. rows) are in this data frame?
+```
 > dim(myfile)
 [1] 153   6
-
 > nrow(myfile)
 [1] 153
 > ncol(myfile)
 [1] 6
-Your Answer		Score	Explanation
-153	Correct	1.00	You can use the `nrow()' function to compute the number of rows in a data frame.
-160	
-
-
-
-129	
-
-
-
-45	
-
-
-
-Total	
-
-1.00 / 1.00	
-
-Question 14
-
+```
+```
+1. 153	Correct	1.00	You can use the `nrow()' function to compute the number of rows in a data frame.
+2. 160	
+3. 129	
+4. 45	
+```
+### Question 14
 Extract the last 2 rows of the data frame and print them to the console. What does the output look like?
+```
 > myfile[c((nrow(myfile)-1):nrow(myfile)),]
     Ozone Solar.R Wind Temp Month Day
 152    18     131  8.0   76     9  29
@@ -491,68 +343,44 @@ Extract the last 2 rows of the data frame and print them to the console. What do
     Ozone Solar.R Wind Temp Month Day
 152    18     131  8.0   76     9  29
 153    20     223 11.5   68     9  30
-Your Answer		Score	Explanation
 
-    Ozone Solar.R Wind Temp Month Day
+```
+```
+1.    Ozone Solar.R Wind Temp Month Day
 152    18     131  8.0   76     9  29
 153    20     223 11.5   68     9  30
 
 Correct	1.00	The `tail()' function is an easy way to extract the last few elements of an R object.
 
-    Ozone Solar.R Wind Temp Month Day
+2.    Ozone Solar.R Wind Temp Month Day
 152    11      44  9.7   62     5  20
 153   108     223  8.0   85     7  25
 
-
-
-
-
-    Ozone Solar.R Wind Temp Month Day
+3.    Ozone Solar.R Wind Temp Month Day
 152    34     307 12.0   66     5  17
 153    13      27 10.3   76     9  18
 
-
-
-
-
-    Ozone Solar.R Wind Temp Month Day
+ 4.   Ozone Solar.R Wind Temp Month Day
 152    31     244 10.9   78     8  19
 153    29     127  9.7   82     6   7
 
-
-
-
-Total	
-
-1.00 / 1.00	
-
-Question 15
-
+```
+-
+### Question 15
 What is the value of Ozone in the 47th row?
+```
 > myfile[47,"Ozone"]
 [1] 21
-Your Answer		Score	Explanation
-34	
-
-
-
-21	Correct	1.00	The single bracket [ operator can be used to extract individual rows of a data frame.
-18	
-
-
-
-63	
-
-
-
-Total	
-
-1.00 / 1.00	
-
-Question 16
-
+```
+```
+1. 34	
+2. 21	Correct	1.00	The single bracket [ operator can be used to extract individual rows of a data frame.
+3. 18	
+4. 63	
+```
+### Question 16
 How many missing values are in the Ozone column of this data frame?
-
+```
 > missing=is.na(myfile[,"Ozone"])
 > missing
   [1] FALSE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE
@@ -573,59 +401,37 @@ How many missing values are in the Ozone column of this data frame?
 [1] 116
 > sum(missing==TRUE)
 [1] 37
-
-Your Answer		Score	Explanation
-9	
-
-
-
-78	
-
-
-
-43	
-
-
-
-37	Correct	1.00	
-
-Total	
-
-1.00 / 1.00	
+```
+```
+1. 9	
+2. 78	
+3. 43	
+4. 37	Correct	1.00	
 
 Question Explanation
-
-The `is.na' function can be used to test for missing values.
-Question 17
-
+The "is.na" function can be used to test for missing values.
+```
+### Question 17
 What is the mean of the Ozone column in this dataset? Exclude missing values (coded as NA) from this calculation.
-
+```
 > mean(myfile[,"Ozone"], na.rm=TRUE)
 [1] 42.12931
 Your Answer		Score	Explanation
-53.2	
 
-
-
-18.0	
-
-
-
-31.5	
-
-
-
-42.1	Correct	1.00	
-
-Total	
-
-1.00 / 1.00	
+```
+```
+1. 18.0	
+2. 31.5	
+3. 42.1	Correct	1.00
+4. 53.2
 
 Question Explanation
 
-The `mean' function can be used to calculate the mean.
-Question 18
-
+The "mean" function can be used to calculate the mean.
+```
+-
+### Question 18
+```
 Extract the subset of rows of the data frame where Ozone values are above 31 and Temp values are above 90. What is the mean of Solar.R in this subset?
 
 > R= subset(myfile,myfile[,"Ozone"] >31 & myfile[,"Temp"] >90)
@@ -644,32 +450,20 @@ Extract the subset of rows of the data frame where Ozone values are above 31 and
  [1] 267 272 203 225 237 188 167 197 183 189
 > mean(R[,"Solar.R"])
 [1] 212.8
-Your Answer		Score	Explanation
-205.0	
-
-
-
-212.8	Correct	1.00	
-
-185.9	
-
-
-
-334.0	
-
-
-
-Total	
-
-1.00 / 1.00	
+```
+```
+1. 205.0	
+2. 212.8	Correct	1.00	
+3. 185.9	
+4. 334.0	
 
 Question Explanation
-
 You need to construct a logical vector in R to match the question's requirements. Then use that logical vector to subset the data frame.
-Question 19
-
+```
+-
+### Question 19
 What is the mean of "Temp" when "Month" is equal to 6?
-
+```
 > T= subset(myfile,myfile[,"Month"] ==6)
 > T
    Ozone Solar.R Wind Temp Month Day
@@ -705,29 +499,17 @@ What is the mean of "Temp" when "Month" is equal to 6?
 61    NA     138  8.0   83     6  30
 > mean(T[,"Temp"])
 [1] 79.1
-Your Answer		Score	Explanation
-90.2	
-
-
-
-75.3	
-
-
-
-79.1	Correct	1.00	
-
-85.6	
-
-
-
-Total	
-
-1.00 / 1.00	
-
-
-Question 20
+```
+```
+1. 90.2	
+2. 75.3	
+3. 79.1	Correct	1.00	
+4. 85.6	
+```
+-
+### Question 20
 What was the maximum ozone value in the month of May (i.e. Month = 5)?
-
+```
 > max(subset(myfile[["Ozone"]],myfile[,"Month"] == 5), na.rm=TRUE)
 [1] 115
 
@@ -764,27 +546,15 @@ What was the maximum ozone value in the month of May (i.e. Month = 5)?
 29    45
 30   115
 31    37
-Your Answer		Score	Explanation
-18	
-
-
-
-97	
-
-
-
-100	
-
-
-
-115	Correct	1.00	
-
-Total	
-
-1.00 / 1.00	
-
-
-
+```
+```
+1. 18	
+2. 97	
+3. 100	
+4. 115	Correct	1.00
+```
+-
+-
 > getwd()
 [1] "/Users/Fer"
 > myfunction()
@@ -987,4 +757,4 @@ Error: could not find function "myfunction"
 152    18     131  8.0   76     9  29
 153    20     223 11.5   68     9  30
 > myfile=read.csv("hw1_data.csv")
-
+```
