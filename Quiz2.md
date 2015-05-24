@@ -76,7 +76,8 @@ What is the value of "y" after evaluating this expression?
 4. 10	Correct	1.00	
 
 ```
--	
+-
+	
 ### Question 5
 
 Consider the following R function
@@ -94,12 +95,15 @@ Consider the following R function
 }
 
 Which symbol in the above function is a free variable?
+
 ```
+
 1. f	Correct	1.00	
 2. z			
 3. d			
 4. L			
 5. g			
+
 ```
 -	
 
