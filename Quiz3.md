@@ -23,10 +23,10 @@ Your Answer		Score	Explanation
 Continuing with the 'iris' dataset from the previous Question, what R code returns a vector of the means of the variables 'Sepal.Length', 'Sepal.Width', 'Petal.Length', and 'Petal.Width'?
 ```
 Your Answer		Score	Explanation
-apply(iris, 1, mean)			
-apply(iris, 2, mean)			
-colMeans(iris)			
-apply(iris[, 1:4], 2, mean)	Correct	1.00	
+1. apply(iris, 1, mean)			
+2. apply(iris, 2, mean)			
+3. colMeans(iris)			
+4. apply(iris[, 1:4], 2, mean)	Correct	1.00	
 ```
 
 -
@@ -40,10 +40,10 @@ There will be an object names 'mtcars' in your workspace. You can find some info
 How can one calculate the average miles per gallon (mpg) by number of cylinders in the car (cyl)?
 ```
 Your Answer		Score	Explanation
-sapply(mtcars, cyl, mean)			
-sapply(split(mtcars$mpg, mtcars$cyl), mean)	Correct	1.00	
-split(mtcars, mtcars$cyl)			
-lapply(mtcars, mean)	
+1. sapply(mtcars, cyl, mean)			
+2. sapply(split(mtcars$mpg, mtcars$cyl), mean)	Correct	1.00	
+3. split(mtcars, mtcars$cyl)			
+4. lapply(mtcars, mean)	
 ```		
 
 -
@@ -66,9 +66,9 @@ If you run debug(ls) what happens when you next call the 'ls' function?
 ```
 
 Your Answer		Score	Explanation
-Execution of the 'ls' function will suspend at the 4th line of the function and you will be in the browser.			
-Execution of 'ls' will suspend at the beginning of the function and you will be in the browser.	Correct	1.00	
-The 'ls' function will execute as usual.			
-You will be prompted to specify at which line of the function you would like to suspend execution and enter the browser.			
+1. Execution of the 'ls' function will suspend at the 4th line of the function and you will be in the browser.			
+2. Execution of 'ls' will suspend at the beginning of the function and you will be in the browser.	Correct	1.00	
+3. The 'ls' function will execute as usual.			
+4. You will be prompted to specify at which line of the function you would like to suspend execution and enter the browser.			
 ```
 
