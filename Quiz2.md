@@ -82,7 +82,8 @@ What is the value of "y" after evaluating this expression?
 
 Consider the following R function
 > h <- function(x, y = NULL, d = 3L) {
->        z <- cbind(x, d)
+
+        z <- cbind(x, d)
         if(!is.null(y))
                 z <- z + y
         else
@@ -92,6 +93,7 @@ Consider the following R function
                 return(g)
         g <- g + 10
         g
+
 }
 
 Which symbol in the above function is a free variable?
