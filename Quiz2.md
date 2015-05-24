@@ -97,7 +97,6 @@ Consider the following R function
 Which symbol in the above function is a free variable?
 
 ```
-
 1. f	Correct	1.00	
 2. z			
 3. d			
@@ -106,7 +105,7 @@ Which symbol in the above function is a free variable?
 
 ```
 
--	
+--	
 
 ### Question 6
 
