@@ -45,9 +45,9 @@ In R the following are all atomic data types EXCEPT
 ```
 -
 ### Question 4
-If I execute the expression x <- 4L in R, what is the class of the object 'x' as determined by the 'class()' function?
+If I execute the expression x <- 4L in R, what is the class of the object x as determined by the class() function?
 ```
-1. integer	Correct	1.00	The 'L' suffix creates an integer vector as opposed to a numeric vector.
+1. integer	Correct	1.00	The L suffix creates an integer vector as opposed to a numeric vector.
 2. numeric	
 3. character	
 4. matrix	
