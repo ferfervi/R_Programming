@@ -48,7 +48,6 @@ In R the following are all atomic data types EXCEPT
 If I execute the expression x <- 4L in R, what is the class of the object `x' as determined by the `class()' function?
 
 ```
-
 1. integer	Correct	1.00	The 'L' suffix creates an integer vector as opposed to a numeric vector.
 2. numeric	
 3. character	
@@ -108,7 +107,6 @@ Suppose I have a list defined as x <- list(2, "a", "b", TRUE). What does x[[1]] 
 ### Question 9
 Suppose I have a vector x <- 1:4 and y <- 2:3. What is produced by the expression x + y?
 ```
-
 1. a warning	
 
 2. an integer vector with the values 3, 5, 5, 7.	Correct	1.00	
@@ -134,7 +132,6 @@ Suppose I have a vector x <- c(3, 5, 1, 10, 12, 6) and I want to set all element
 In the dataset provided for this Quiz, what are the column names of the dataset?
 
 ```
-
 > dir()
 [1] "functions.R"  "hw1_data.csv" "Untitled.R"  
 > read.csv("hw1_data.csv")
