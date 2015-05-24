@@ -41,10 +41,10 @@ If I execute the expression x <- 4L in R, what is the class of the object x as d
 ```
 - 
 ### Question 5
-What is the class of the object defined by the expression x <- c(4, "a", TRUE)?
+What is the class of the object defined by the expression x <- c(4, 'a', TRUE)?
 ```
 1. logical	
-2. character	Correct	1.00	The character class is the "lowest common denominator" here and so all elements will be coerced into that class.
+2. character	Correct	1.00	The character class is the lowest common denominator here and so all elements will be coerced into that class.
 3. numeric	
 4. integer	
 
