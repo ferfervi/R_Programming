@@ -40,8 +40,6 @@ If I execute the expression x <- 4L in R, what is the class of the object x as d
 4. matrix	
 ```
 - 
--
-
 ### Question 5
 What is the class of the object defined by the expression x <- c(4, 'a', TRUE)?
 ```
