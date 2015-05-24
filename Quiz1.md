@@ -104,13 +104,9 @@ Suppose I have a list defined as x <- list(2, "a", "b", TRUE). What does x[[1]] 
 Suppose I have a vector x <- 1:4 and y <- 2:3. What is produced by the expression x + y?
 ```
 1. a warning	
-
 2. an integer vector with the values 3, 5, 5, 7.	Correct	1.00	
-
 3. a numeric vector with the values 3, 5, 3, 4. 
-
 4. an integer vector with the values 3, 5, 3, 4.	
-
 ```
 -
 ### Question 10
@@ -291,15 +287,10 @@ In the dataset provided for this Quiz, what are the column names of the dataset?
 ```
 ```
 1. Ozone, Solar.R, Wind	
-
 2. Ozone, Solar.R, Wind, Temp, Month, Day	Correct	1.00	You can get the column names of a data frame with the `names()' function.
 3. 1, 2, 3, 4, 5, 6	
-
 4. Month, Day, Temp, Wind	
-
-
 ```
-
 -
 ### Question 12
 Extract the first 2 rows of the data frame and print them to the console. What does the output look like?
@@ -348,7 +339,6 @@ How many observations (i.e. rows) are in this data frame?
 ### Question 14
 Extract the last 2 rows of the data frame and print them to the console. What does the output look like?
 ```
-
 > myfile[c((nrow(myfile)-1):nrow(myfile)),]
     Ozone Solar.R Wind Temp Month Day
 152    18     131  8.0   76     9  29
@@ -397,7 +387,6 @@ What is the value of Ozone in the 47th row?
 4. 63	
 ```
 ### Question 16
-
 How many missing values are in the Ozone column of this data frame?
 ```
 > missing=is.na(myfile[,"Ozone"])
@@ -430,7 +419,7 @@ How many missing values are in the Ozone column of this data frame?
 
 Question Explanation
 
-The `is.na' function can be used to test for missing values.
+The "is.na" function can be used to test for missing values.
 
 ```
 ### Question 17
@@ -448,7 +437,7 @@ Your Answer		Score	Explanation
 
 Question Explanation
 
-The `mean' function can be used to calculate the mean.
+The "mean" function can be used to calculate the mean.
 ```
 -
 ### Question 18
@@ -481,7 +470,7 @@ Question Explanation
 
 You need to construct a logical vector in R to match the question's requirements. Then use that logical vector to subset the data frame.
 ```
-
+-
 ### Question 19
 What is the mean of "Temp" when "Month" is equal to 6?
 
@@ -526,10 +515,10 @@ What is the mean of "Temp" when "Month" is equal to 6?
 3. 79.1	Correct	1.00	
 4. 85.6	
 ```
-
+-
 ### Question 20
 What was the maximum ozone value in the month of May (i.e. Month = 5)?
-
+```
 > max(subset(myfile[["Ozone"]],myfile[,"Month"] == 5), na.rm=TRUE)
 [1] 115
 
@@ -567,11 +556,13 @@ What was the maximum ozone value in the month of May (i.e. Month = 5)?
 30   115
 31    37
 ```
+```
 1. 18	
 2. 97	
 3. 100	
-4. 115	Correct	1.00	
-
+4. 115	Correct	1.00
+---
+```
 > getwd()
 [1] "/Users/Fer"
 > myfunction()
