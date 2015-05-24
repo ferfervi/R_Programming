@@ -105,6 +105,7 @@ Which symbol in the above function is a free variable?
 5. g			
 
 ```
+
 -	
 
 ### Question 6
