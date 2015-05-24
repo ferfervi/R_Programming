@@ -56,6 +56,7 @@ What value is returned?
 4. 4			
 ```
 -
+
 ### Question 4
 
 Consider the following expression:
@@ -67,6 +68,7 @@ y <- if(x < 3) {
 }
 
 What is the value of "y" after evaluating this expression?
+
 ```
 1. 3			
 2. NA			
@@ -100,6 +102,7 @@ Which symbol in the above function is a free variable?
 5. g			
 ```
 -	
+
 ### Question 6
 
 What is an environment in R?
@@ -110,6 +113,7 @@ What is an environment in R?
 4. a special type of function			
 ```	
 -
+
 ### Question 7
 
 The R language uses what type of scoping rule for resolving free variables?
@@ -120,6 +124,7 @@ The R language uses what type of scoping rule for resolving free variables?
 4. dynamic scoping			
 ```
 -
+
 ### Question 8
 
 How are free variables in R functions resolved?
