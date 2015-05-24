@@ -46,7 +46,8 @@ Consider the following function
 
 If I then run in R
 > z <- 10
-f(3)
+
+> f(3)
 
 What value is returned?
 ```
@@ -61,7 +62,8 @@ What value is returned?
 
 Consider the following expression:
 > x <- 5
-y <- if(x < 3) {
+>
+> y <- if(x < 3) {
         NA
 } else {
         10
