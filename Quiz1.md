@@ -45,14 +45,12 @@ In R the following are all atomic data types EXCEPT
 ```
 -
 ### Question 4
-If I execute the expression x <- 4L in R, what is the class of the object `x' as determined by the `class()' function?
-
+If I execute the expression x <- 4L in R, what is the class of the object 'x' as determined by the 'class()' function?
 ```
 1. integer	Correct	1.00	The 'L' suffix creates an integer vector as opposed to a numeric vector.
 2. numeric	
 3. character	
 4. matrix	
-
 ```
 - 
 ### Question 5
@@ -64,7 +62,6 @@ What is the class of the object defined by the expression x <- c(4, "a", TRUE)?
 4. integer	
 
 Question Explanation
-
 R does automatic coercion of vectors so that all elements of the vector are the same data class.
 ```
 - 
@@ -75,7 +72,6 @@ If I have two vectors x <- c(1,3, 5) and y <- c(3, 2, 10), what is produced by t
 2. a vector of length 2	
 3. a 3 by 2 numeric matrix	Correct	1.00	The 'cbind' function treats vectors as if they were columns of a matrix. It then takes those vectors and binds them together column-wise to create a matrix.
 4. a vector of length 3	
-
 ```
 -
 ### Question 7
@@ -120,7 +116,6 @@ Suppose I have a vector x <- 1:4 and y <- 2:3. What is produced by the expressio
 ### Question 10
 Suppose I have a vector x <- c(3, 5, 1, 10, 12, 6) and I want to set all elements of this vector that are less than 6 to be equal to zero. What R code achieves this?
 ```
-
 1. x[x < 6] <- 0	Correct	1.00	You can create a logical vector with the expression x < 6 and then use the [ operator to subset the original vector x.
 2. x[x > 6] <- 0	
 3. x[x == 6] <- 0	
@@ -130,7 +125,6 @@ Suppose I have a vector x <- c(3, 5, 1, 10, 12, 6) and I want to set all element
 -
 ### Question 11
 In the dataset provided for this Quiz, what are the column names of the dataset?
-
 ```
 > dir()
 [1] "functions.R"  "hw1_data.csv" "Untitled.R"  
