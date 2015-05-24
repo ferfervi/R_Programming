@@ -52,8 +52,8 @@ What is the class of the object defined by the expression x <- c(4, 'a', TRUE)?
 Question Explanation
 R does automatic coercion of vectors so that all elements of the vector are the same data class.
 ```
-- 
 -
+
 ### Question 6
 If I have two vectors x <- c(1,3, 5) and y <- c(3, 2, 10), what is produced by the expression cbind(x, y)?
 ```
