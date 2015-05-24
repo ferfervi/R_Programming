@@ -16,10 +16,10 @@ cube(3) in R after defining this function?
 ```			
 
 -
-###Question 2
+### Question 2
 
 The following code will produce a warning in R.
-x <- 1:10
+> x <- 1:10
 if(x > 5) {
         x <- 0
 }
@@ -36,7 +36,7 @@ Why?
 ###Question 3
 
 Consider the following function
-f <- function(x) {
+> f <- function(x) {
         g <- function(y) {
                 y + z
         }
@@ -45,7 +45,7 @@ f <- function(x) {
 }
 
 If I then run in R
-z <- 10
+> z <- 10
 f(3)
 
 What value is returned?
@@ -59,7 +59,7 @@ What value is returned?
 ###Question 4
 
 Consider the following expression:
-x <- 5
+> x <- 5
 y <- if(x < 3) {
         NA
 } else {
@@ -77,7 +77,7 @@ What is the value of 'y' after evaluating this expression?
 ### Question 5
 
 Consider the following R function
-h <- function(x, y = NULL, d = 3L) {
+> h <- function(x, y = NULL, d = 3L) {
         z <- cbind(x, d)
         if(!is.null(y))
                 z <- z + y
