@@ -101,9 +101,10 @@ In order to complete this assignment, you must do the following:
     the completed R code for the assignment.
 
 ### Solution: 
-
+```
 
  C) How to use these functions for testing the lexical scoping??
+
  c.1) Create an object which will store the contenct of the matrix, his inverse, and functions to access them 
       > wrapper= makeCacheMatrix();
 
@@ -126,7 +127,7 @@ In order to complete this assignment, you must do the following:
    [1,]   -2  1.5
    [2,]    1 -0.5
 
-
+```
 
 ### Grading
 
