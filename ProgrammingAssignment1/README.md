@@ -100,5 +100,6 @@ You can see some example output from this function. The function that you write 
 > autoplot(tm)
 ```
 Comparision execution: 
+
 ![alt text](https://github.com/ferfervi/R_Programming/blob/master/ProgrammingAssignment1/comparing_time_execution.jpg  "comparing execution times")
 
