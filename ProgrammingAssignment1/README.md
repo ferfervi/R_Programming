@@ -91,6 +91,67 @@ You can see some example output from this function. The function that you write 
 
 # SOLUTION
 
+
+### Script 1. "pollutantmean". Gets as a impout the files and the polutant(pollution element to consider). Return the mean of the files/ monitor-estations considered.
+```
+pollutantmean <- function(directory, pollutant, id = 1:332) {
+  ## 'directory' is a character vector of length 1 indicating
+  ## the location of the CSV files
+  
+  ## 'pollutant' is a character vector of length 1 indicating
+  ## the name of the pollutant for which we will calculate the
+  ## mean; either "sulfate" or "nitrate".
+  
+  ## 'id' is an integer vector indicating the monitor ID numbers
+  ## to be used
+  
+  ## Return the mean of the pollutant across all monitors list
+  ## in the 'id' vector (ignoring NA values)
+  ## NOTE: Do not round the result!
+  
+  
+  #PRIMERA SOLUCIO: LLEGIR SOLS ELS FIXERS Q VOLEM
+  #SEGONA: TODO: llegir tots els fixers i extraure el subset on columna ID=id
+  
+  #A) obtain vector with file names to read
+ 
+  #match the file format, obtain files in 3 difits characters.
+  filenames <- sprintf("%03d.csv", id)
+
+  #add the directory to the file name
+  if(!is.null(directory))
+  {
+     filenames <- paste(directory, filenames, sep="/")
+  }
+  
+  # B) READ  selected files
+
+  # OPTION B1. -> with "lapply".
+  # "lapply" applies the FUN function to the list "filenames". Each element of the list is
+  # referenced by "files". So the function read every files. Later the result from all files is merged with "rbind". 
+  # rbind binds the different files content adding them "at the bottom", by row. cbinds exists as well. Now we got all
+  # the data from all files that have been selected together in the variable "dataset".
+   dataset <- do.call("rbind",lapply(filenames,
+                                     FUN=function(files){read.csv(files,
+                                                             header=TRUE, sep=",")}))
+  
+  # OPTION B2 -> with ldply.
+  # "ldply" returns a dataframe. Requires library "plyr"
+    # require(plyr)
+    #dataset <- ldply(filenames, read.csv)
+  
+  # calculate the mean from the dataset. Select all rows, and only the "pollutant" column sent as parameter.
+  themean <- mean(dataset[, pollutant], na.rm = TRUE)
+  themean
+  #as.data.frame(themean)
+}
+
+
+```
+
+
+
+
 ```
 > library("ggplot2")
 > tm <- microbenchmark(   corr("specdata", 800),
