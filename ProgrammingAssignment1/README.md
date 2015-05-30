@@ -87,3 +87,18 @@ corr <- function(directory, threshold = 0) {
 
 For this function you will need to use the 'cor' function in R which calculates the correlation between two vectors. Please read the help page for this function via '?cor' and make sure that you know how to use it.
 You can see some example output from this function. The function that you write should be able to match this output. Please save your code to a file named corr.R. To run the submit script for this part, make sure your working directory has the file corr.R in it.
+
+
+# SOLUTION
+
+```
+> library("ggplot2")
+> tm <- microbenchmark(   corr("specdata", 800),
+                         corr("specdata", 900),
+                         corr("specdata", 5000),
+                          times=2L)
+> autoplot(tm)
+```
+Comparision execution: 
+![alt text](https://github.com/ferfervi/R_Programming/tree/master/ProgrammingAssignment1/comparing_time_execution.jpg  "comparing execution times")
+
