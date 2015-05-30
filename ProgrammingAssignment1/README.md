@@ -92,7 +92,7 @@ You can see some example output from this function. The function that you write 
 # SOLUTION
 
 
-### Script 1. "pollutantmean". Gets as a impout the files and the polutant(pollution element to consider). Return the mean of the files/ monitor-estations considered.
+#### Script 1. "pollutantmean". Gets as a impout the files and the polutant(pollution element to consider). Return the mean of the files/ monitor-estations considered.
 ```
 pollutantmean <- function(directory, pollutant, id = 1:332) {
   ## 'directory' is a character vector of length 1 indicating
@@ -149,7 +149,7 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
 
 ```
 
-### Script 2: return data frame in each line every station id with number of complete cases.
+#### Script 2: return data frame in each line every station id with number of complete cases.
 ```
 complete <- function(directory, id = 1:332) {
   ## 'directory' is a character vector of length 1 indicating
@@ -195,7 +195,78 @@ complete <- function(directory, id = 1:332) {
 }
 
 ```
+#### Part 3
 
+```
+corr <- function(directory, threshold = 0) {
+  ## 'directory' is a character vector of length 1 indicating
+  ## the location of the CSV files
+  
+  ## 'threshold' is a numeric vector of length 1 indicating the
+  ## number of completely observed observations (on all
+  ## variables) required to compute the correlation between
+  ## nitrate and sulfate; the default is 0
+  
+  ## Return a numeric vector of correlations
+  ## NOTE: Do not round the result!
+  
+
+  # A) Select the files with ncomplete > threshold. Call previous script "complete" to get number of complete cases in every station/file. Later extract from from these list with IDs + n complete cases the ones fulfilling the threshold in "ids". 
+ # Use function the function subset, the first parameter is the dataset, the second is the condition.
+
+  fileID.ncomplete <- complete(directory)
+  ids <- subset(fileID.ncomplete[["id"]],fileID.ncomplete[,"nobs"] > threshold)
+ 
+ # Once we got the IDs of the stations fulfilling the threshold, generate the filename in correct format.
+ filenames <- sprintf("%03d.csv", ids)
+ 
+   if(!is.null(directory) && length(filenames)>0)
+   {
+     filenames <- paste(directory, filenames, sep="/")
+   }
+ 
+
+ # B) READ  selected files
+
+ if(length(filenames)>0)
+ {
+   dataset <- do.call("rbind",lapply( filenames,
+                                      FUN=function(file)
+                                      { fc <- read.csv(file);
+                                        
+                                        # get row with which are complete cses
+                                        rfc <- fc[complete.cases(fc),]
+
+                                        # calculate the correlation between thrse 2 polluters in the selected station.
+                                        cor(rfc["sulfate"],rfc["nitrate"])
+                                      }
+                                    )
+                       )
+ 
+   #format it as vector instead of data frame. (as.dataframe())
+   as.vector(dataset)
+ }
+ else
+ {
+   vector('numeric')
+ }
+
+ 
+}
+
+
+```
+##### At the end of this 3rd script we got the result, a numeric vector with the correlation between poluters from stations that fulfill a minimum number of complete cases / observations.
+
++ corr("foldername", threshold) will return the vector with correlations for stations with ncomplete-observations > threshold.
+
++ The highest the "threshold" number, less stations will fulfill the requirement and will be returned by script 2.
+
++ Therefore, the highest is the threshold, less correlations will need to calculate stript3 (quicker).
+
+
+---
+##### Comparison Execution times, when higher the threshold, less stations to calculate the correlation. Quicker.
 
 ```
 > library("ggplot2")
