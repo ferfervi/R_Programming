@@ -264,12 +264,18 @@ corr <- function(directory, threshold = 0) {
 
 + Therefore, the highest is the threshold, less correlations will need to calculate stript3 (quicker).
 
+here we see that for threshold "1000" only 3 stations are processed
+
+ > corr("specdata",1000)
+[1] -0.01895754  0.04191777  0.19014198
+
 
 ---
 ##### Comparison Execution times, when higher the threshold, less stations to calculate the correlation. Quicker.
 
 ```
 > library("ggplot2")
+> library(microbenchmark)
 > tm <- microbenchmark(   corr("specdata", 800),
                          corr("specdata", 900),
                          corr("specdata", 5000),
