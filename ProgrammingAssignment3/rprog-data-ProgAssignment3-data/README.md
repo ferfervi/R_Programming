@@ -138,6 +138,13 @@ rankhospital <- function (state,outcome,num)
   }
 }
 ```
+```
+> source("rankhospital.R")
+> rankhospital("MD", "pneumonia", "worst")
+[1] "CIVISTA MEDICAL CENTER"
+> rankhospital("TX", "heart failure", 4)
+[1] "DETAR HOSPITAL NAVARRO"
+```
 
 
 ######  section 4: get the hospital in position (num) for every state
@@ -267,4 +274,18 @@ rankall <- function (outcome,num = "best")
 52                    BELLIN MEMORIAL HSPTL    WI
 51       MONONGALIA COUNTY GENERAL HOSPITAL    WV
 53                   WYOMING MEDICAL CENTER    WY
+```  
+```  
+> head(rankall("heart attack",20),10)
+                              hospital state
+2                                 <NA>    AK
+1       D W MCMILLAN MEMORIAL HOSPITAL    AL
+4    ARKANSAS METHODIST MEDICAL CENTER    AR
+3  JOHN C LINCOLN DEER VALLEY HOSPITAL    AZ
+5                SHERMAN OAKS HOSPITAL    CA
+6             SKY RIDGE MEDICAL CENTER    CO
+7              MIDSTATE MEDICAL CENTER    CT
+9                                 <NA>    DC
+8                                 <NA>    DE
+10      SOUTH FLORIDA BAPTIST HOSPITAL    FL
 ```  
