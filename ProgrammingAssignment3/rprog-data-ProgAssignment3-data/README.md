@@ -16,8 +16,9 @@
 # plot histogram
 > hist(outcome[,11])
 ```
+
 Histogram: 
-![Histogram](https://github.com/ferfervi/R_Programming/tree/master/ProgrammingAssignment3/rprog-data-ProgAssignment3-data/histogram1.png)
+(https://github.com/ferfervi/R_Programming/tree/master/ProgrammingAssignment3/rprog-data-ProgAssignment3-data/histogram1.png)
 
 
 ######## section 2: find best hospital (less outcome parameter: i.e: deads by "hard attacks", "pneumonia"..)
