@@ -70,5 +70,11 @@ best <- function (state,outcome)
    as.character(best_hospital[1])
 }
 
-
 ```
+```
+> source("best.R")
+> best("MD","pneumonia")
+[1] "GREATER BALTIMORE MEDICAL CENTER"
+```
+
+
