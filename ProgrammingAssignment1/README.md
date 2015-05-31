@@ -282,7 +282,7 @@ here we see that for threshold "1000" only 3 stations are processed
                           times=2L)
 > autoplot(tm)
 ```
-Comparision execution: 
+Comparison execution: 
 
 ![alt text](https://github.com/ferfervi/R_Programming/blob/master/ProgrammingAssignment1/comparing_time_execution.jpg  "comparing execution times")
 
