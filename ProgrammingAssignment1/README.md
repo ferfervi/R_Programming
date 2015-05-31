@@ -286,3 +286,9 @@ Comparison execution:
 
 ![alt text](https://github.com/ferfervi/R_Programming/blob/master/ProgrammingAssignment1/comparing_time_execution.jpg  "comparing execution times")
 
+##### Executing the test 1 time ( times = 1L)
+
+![alt text](https://github.com/ferfervi/R_Programming/blob/master/ProgrammingAssignment1/executionTime1L.png  "comparing execution times")
+
+
+
