@@ -48,11 +48,10 @@ rankall <- function (outcome,num = "best")
                                             } 
                                     )
                           )
+  # return it a a data frame
   colnames(dataset)<- c("hospital","state")
   dataframe <- as.data.frame(dataset)
-  dataframe <- dataframe[ order(dataframe[,"state"]),]
-  
- 
+  dataframe[ order(dataframe[,"state"]),]
   
   
 }
