@@ -2,7 +2,7 @@
 ##### Analyze the data from different hospitals and find the best hospital
 
 
-######## section 1: example how to read data and print histogram
+###### section 1: example how to read data and print histogram
 
 ```
 # read file data as "characters"
@@ -23,7 +23,7 @@ Histogram:
 
 
 
-######## section 2: find best hospital (less outcome parameter: i.e: deads by "hard attacks", "pneumonia"..)
+######  section 2: find best hospital (less outcome parameter: i.e: deads by "hard attacks", "pneumonia"..)
 ```
 best <- function (state,outcome)
 {
