@@ -5,7 +5,6 @@
 ######## section 1: example how to read data and print histogram
 
 ```
-
 # read file data as "characters"
 > outcome <- read.csv("outcome-of-care-measures.csv", colClasses ="character")
 
@@ -15,10 +14,13 @@
 
 # plot histogram
 > hist(outcome[,11])
+
 ```
 
 Histogram: 
+
 ![Histogram](https://github.com/ferfervi/R_Programming/tree/master/ProgrammingAssignment3/rprog-data-ProgAssignment3-data/histogram1.jpg "Histogram")
+
 
 
 ######## section 2: find best hospital (less outcome parameter: i.e: deads by "hard attacks", "pneumonia"..)
@@ -72,6 +74,7 @@ best <- function (state,outcome)
 }
 
 ```
+
 ```
 > source("best.R")
 > best("MD","pneumonia")
