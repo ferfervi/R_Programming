@@ -1,5 +1,5 @@
-# R_Programming
-R Programming. Data Science specialization: Johns Hopkins University
+# R Programming Course
+ Data Science specialization: Johns Hopkins University
 ---
 
 ##### Useful links: 
