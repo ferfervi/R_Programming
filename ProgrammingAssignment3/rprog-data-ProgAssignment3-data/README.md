@@ -19,7 +19,7 @@
 
 Histogram: 
 
-![Histogram](https://github.com/ferfervi/R_Programming/tree/master/ProgrammingAssignment3/rprog-data-ProgAssignment3-data/histogram1.jpg "Histogram")
+![Histogram](https://github.com/ferfervi/R_Programming/tree/master/ProgrammingAssignment3/rprog-data-ProgAssignment3-data/histogram1.png "Histogram")
 
 
 
