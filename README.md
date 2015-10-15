@@ -1,4 +1,4 @@
-# R Programming Course
+# R Programming Course, by ferfervi
  Data Science specialization: Johns Hopkins University
 ---
 
