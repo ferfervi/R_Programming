@@ -9,12 +9,12 @@
 ##### Index - project content
 
 Assignments
-+ Assignment 1
-+ Assignment 2
-+ Assignment 3
+1. Assignment 1
+2. Assignment 2
+3. Assignment 3
 
 Quizes
-+ Quiz 1
-+ Quiz 2
-+ Quiz 3
-+ Quiz 4
+1. Quiz 1
+2. Quiz 2
+3. Quiz 3
+4. Quiz 4
