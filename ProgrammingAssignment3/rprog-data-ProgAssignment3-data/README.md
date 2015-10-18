@@ -20,7 +20,7 @@
 Histogram: 
 
 
-[logo]: https://github.com/ferfervi/R_Programming/tree/master/ProgrammingAssignment3/rprog-data-ProgAssignment3-data/histogram1.png "Logo Title Text 2"
+[logo]: https://github.com/ferfervi/R_Programming/blob/master/ProgrammingAssignment3/rprog-data-ProgAssignment3-data/histogram1.png "Logo Title Text 2"
 
 
 
